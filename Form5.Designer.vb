@@ -23,68 +23,83 @@ Partial Class Form5
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Label1 = New Label()
-        Panel1 = New Panel()
+        Panel1Leg = New Panel()
+        TextBox1 = New TextBox()
         ButNumAle = New Button()
         ButMudCorFunForm = New Button()
         ButMudCorFundLeg = New Button()
         ButMostrar = New Button()
         ButEsconder = New Button()
-        Panel1.SuspendLayout()
+        Panel1Leg.SuspendLayout()
         SuspendLayout()
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
         Label1.BackColor = Color.White
-        Label1.Location = New Point(131, 84)
+        Label1.Location = New Point(133, 89)
         Label1.Name = "Label1"
-        Label1.Size = New Size(107, 15)
+        Label1.Size = New Size(0, 15)
         Label1.TabIndex = 0
-        Label1.Text = "Isto é uma legenda"
         ' 
-        ' Panel1
+        ' Panel1Leg
         ' 
-        Panel1.Controls.Add(ButNumAle)
-        Panel1.Controls.Add(ButMudCorFunForm)
-        Panel1.Controls.Add(ButMudCorFundLeg)
-        Panel1.Controls.Add(ButMostrar)
-        Panel1.Controls.Add(ButEsconder)
-        Panel1.Controls.Add(Label1)
-        Panel1.Location = New Point(221, 30)
-        Panel1.Name = "Panel1"
-        Panel1.Size = New Size(365, 372)
-        Panel1.TabIndex = 1
+        Panel1Leg.Controls.Add(TextBox1)
+        Panel1Leg.Controls.Add(ButNumAle)
+        Panel1Leg.Controls.Add(ButMudCorFunForm)
+        Panel1Leg.Controls.Add(ButMudCorFundLeg)
+        Panel1Leg.Controls.Add(ButMostrar)
+        Panel1Leg.Controls.Add(ButEsconder)
+        Panel1Leg.Controls.Add(Label1)
+        Panel1Leg.Location = New Point(221, 12)
+        Panel1Leg.Name = "Panel1Leg"
+        Panel1Leg.Size = New Size(363, 390)
+        Panel1Leg.TabIndex = 1
+        ' 
+        ' TextBox1
+        ' 
+        TextBox1.ForeColor = Color.Black
+        TextBox1.Location = New Point(101, 81)
+        TextBox1.Name = "TextBox1"
+        TextBox1.Size = New Size(169, 23)
+        TextBox1.TabIndex = 6
+        TextBox1.Text = "Isto é uma legenda"
+        TextBox1.TextAlign = HorizontalAlignment.Center
         ' 
         ' ButNumAle
         ' 
         ButNumAle.Location = New Point(20, 290)
         ButNumAle.Name = "ButNumAle"
-        ButNumAle.Size = New Size(342, 23)
+        ButNumAle.Size = New Size(322, 22)
         ButNumAle.TabIndex = 5
         ButNumAle.Text = "Escrever na legenda um número aleatório ente 1 e 1000"
         ButNumAle.UseVisualStyleBackColor = True
         ' 
         ' ButMudCorFunForm
         ' 
-        ButMudCorFunForm.Location = New Point(85, 261)
+        ButMudCorFunForm.BackColor = Color.Black
+        ButMudCorFunForm.ForeColor = Color.White
+        ButMudCorFunForm.Location = New Point(68, 261)
         ButMudCorFunForm.Name = "ButMudCorFunForm"
         ButMudCorFunForm.Size = New Size(234, 23)
         ButMudCorFunForm.TabIndex = 4
         ButMudCorFunForm.Text = "Mudar a cor de fundo do formulário"
-        ButMudCorFunForm.UseVisualStyleBackColor = True
+        ButMudCorFunForm.UseVisualStyleBackColor = False
         ' 
         ' ButMudCorFundLeg
         ' 
-        ButMudCorFundLeg.Location = New Point(85, 232)
+        ButMudCorFundLeg.BackColor = Color.Transparent
+        ButMudCorFundLeg.ForeColor = Color.IndianRed
+        ButMudCorFundLeg.Location = New Point(68, 232)
         ButMudCorFundLeg.Name = "ButMudCorFundLeg"
         ButMudCorFundLeg.Size = New Size(234, 23)
         ButMudCorFundLeg.TabIndex = 3
         ButMudCorFundLeg.Text = "Mudar a cor de fundo da legenda"
-        ButMudCorFundLeg.UseVisualStyleBackColor = True
+        ButMudCorFundLeg.UseVisualStyleBackColor = False
         ' 
         ' ButMostrar
         ' 
-        ButMostrar.Location = New Point(85, 203)
+        ButMostrar.Location = New Point(68, 203)
         ButMostrar.Name = "ButMostrar"
         ButMostrar.Size = New Size(234, 23)
         ButMostrar.TabIndex = 2
@@ -93,7 +108,7 @@ Partial Class Form5
         ' 
         ' ButEsconder
         ' 
-        ButEsconder.Location = New Point(85, 174)
+        ButEsconder.Location = New Point(68, 174)
         ButEsconder.Name = "ButEsconder"
         ButEsconder.Size = New Size(234, 23)
         ButEsconder.TabIndex = 1
@@ -105,19 +120,20 @@ Partial Class Form5
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
-        Controls.Add(Panel1)
+        Controls.Add(Panel1Leg)
         Name = "Form5"
         Text = "Form5"
-        Panel1.ResumeLayout(False)
-        Panel1.PerformLayout()
+        Panel1Leg.ResumeLayout(False)
+        Panel1Leg.PerformLayout()
         ResumeLayout(False)
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents Panel1 As Panel
+    Friend WithEvents Panel1Leg As Panel
     Friend WithEvents ButNumAle As Button
     Friend WithEvents ButMudCorFunForm As Button
     Friend WithEvents ButMudCorFundLeg As Button
     Friend WithEvents ButMostrar As Button
     Friend WithEvents ButEsconder As Button
+    Friend WithEvents TextBox1 As TextBox
 End Class
