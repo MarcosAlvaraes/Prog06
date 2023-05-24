@@ -15,7 +15,7 @@ Public Class Form5
     End Sub
 
     Private Sub ButMudCorFunForm_Click(sender As Object, e As EventArgs) Handles ButMudCorFunForm.Click
-        TextBox1.BackColor = Color.White
+        TextBox1.ForeColor = Color.White
         TextBox1.BackColor = Color.Black
     End Sub
 
